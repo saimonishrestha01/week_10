@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <!-- Profile Card Section -->
+    <section id="about" class="profile-section">
+      <div class="profile-card">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+        <h2>Shrestha Saimonai</h2>
+        <p class="profile-title">Computer Engineering Student</p>
+        <p class="profile-bio">Passionate about programming, technology, and building web applications.</p>
+        <div class="tags">
+          <span>💻 Coding</span>
+          <span>🚀 Web Development</span>
+          <span>📚 Learning</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-box">HTML & CSS</div>
+        <div class="skill-box">Python</div>
+        <div class="skill-box">Problem Solving</div>
+        <div class="skill-box">Git & GitHub</div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact-section">
+      <h2>Get in Touch</h2>
+      <p>Have a question or want to connect? Send a message below!</p>
+      
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for your message!');">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Write your message here..." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Shrestha Saimonai. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
